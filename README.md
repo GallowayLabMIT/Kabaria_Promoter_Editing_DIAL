@@ -4,19 +4,19 @@ Data analysis, figure, and modeling code for Kabaria et al "Programmable Promote
 # Python setuppy
 1. Create a virtual environment in the repository directory using python -m venv env
 2. Activate the virtual environment using source env/bin/activate (MacOS, Linux) or .\env\Scripts\activate (Windows)
-3. Install the current package versions for this project using pip install -r requirements.txt (Note for Figure 6 use requirements_bal.txt) Alternatively, if running into errors manually install packages as needed using the versions in the requirments documents. Most used packages are in `functions.py`
+3. Install the current package versions for this project using pip install -r requirements.txt (Note for Figure 6 use requirements_bal.txt, and check the document requirementsworks.txt for further packages) Alternatively, if running into errors manually install packages as needed using the versions in the requirments documents. Most used packages are in `functions.py`
 4. Verify that the correct versions of these packages are installed. Incorrect versions may cause errors in the code:
 ``` 
 rushd==0.5.1
 scipy==1.7.3
-seaborn==0.11.2
+seaborn==0.11.2 # or seaborn==0.12.2
 statannot==0.2.3
 matplotlib==3.5.2
-openpyxl==3.1.5
+openpyxl==3.1.5requirementsworks.txt
 numpy==1.21.6
 pandas==1.3.5
 ```
-These notebooks were also coded with Python 3.9.1. The input `columns` in the function `rd.flow.load_csv_with_metadata` may be removed if returning errors. 
+These notebooks were also coded with Python 3.9.1. The input `columns` in the function `rd.flow.load_csv_with_metadata` may be removed if returning errors. The line `#rd.plot.plot_well_metadata(yaml_path)` can be commented out if need (this line shows the plate layout.)
 
 5. Download the raw and analyzed data from Zenodo (DOI: [10.5281/zenodo.16576807](https://doi.org/10.5281/zenodo.16576807)), specifically the data.zip file. Unzip this file.
 6. Create a file in the root directory of the repo called datadir.txt that contains the absolute path to the data directory you just downloaded. This should be a single line.
