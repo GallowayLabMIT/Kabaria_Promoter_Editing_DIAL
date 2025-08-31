@@ -1,6 +1,9 @@
 # Kabaria_Promoter_Editing_DIAL
 Data analysis, figure, and modeling code for Kabaria et al "Programmable Promoter Editing for Precise Control of Transgene Expression"
 
+# Reference Data 
+Code in this repository require data from Zenodo (DOI: [10.5281/zenodo.17014280](https://doi.org/10.5281/zenodo.17014280)). 
+
 # Python setup for data analysis and figures
 1. Create a virtual environment in the repository directory using python -m venv env
 2. Activate the virtual environment using source env/bin/activate (MacOS, Linux) or .\env\Scripts\activate (Windows)
@@ -18,7 +21,7 @@ pandas==1.3.5
 ```
 These notebooks were coded with Python 3.9.1. 
 
-5. Download the raw and analyzed data from Zenodo (DOI: [10.5281/zenodo.17014280](https://doi.org/10.5281/zenodo.17014280)), specifically the data.zip file. Unzip this file.
+5. Download the raw and analyzed data from Zenodo, specifically the data.zip file. Unzip this file.
 6. Create a file in the root directory of the repo called `datadir.txt` that contains the absolute path to the data directory you just downloaded. This should be a single line.
 
 # Importing data into ipynb 
@@ -39,7 +42,7 @@ and become:
 # Import Data1
 # Import Data -BioRep1
 folder = '20240121flow_exp20240118_p2'
-file_path = datadir'/'Sneha'/folder/'export_singlets' #Assign file paths
+file_path = datadir/'Sneha'/folder/'export_singlets' #Assign file paths
 yaml_path = datadir/'Sneha'/folder/'well_metadata.yaml' #Assign yaml paths 
 data1 = rd.flow.load_csv_with_metadata(file_path, yaml_path) #Pull data
 ```
