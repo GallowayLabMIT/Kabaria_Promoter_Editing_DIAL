@@ -4,8 +4,8 @@ Data analysis, figure, and modeling code for Kabaria et al "Programmable Promote
 # Python setup
 1. Create a virtual environment in the repository directory using python -m venv env
 2. Activate the virtual environment using source env/bin/activate (MacOS, Linux) or .\env\Scripts\activate (Windows)
-3. Install the current package versions for this project using pip install -r requirements.txt (Note for Figure 6 use requirements_bal.txt)
-4. Verify that the correct versions of these packages are installed. Incorrect versions may cause errors in the code:-r
+3. Install the current package versions for this project using pip install -r requirements.txt (Note for Figure 6 use requirements_bal.txt) Alternatively, if running into errors manually install packages as needed using the versions in the requirments documents. Most used packages are in `functions.py`
+4. Verify that the correct versions of these packages are installed. Incorrect versions may cause errors in the code:
 ``` 
 rushd==0.5.1
 scipy==1.7.3
