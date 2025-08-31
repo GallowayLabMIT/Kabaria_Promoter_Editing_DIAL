@@ -39,3 +39,5 @@ file_path = datadir/'attune'/'Sneha'/folder/'export_singlets' #Assign file paths
 yaml_path = datadir/'attune'/'Sneha'/folder/'well_metadata.yaml' #Assign yaml paths 
 data1 = rd.flow.load_csv_with_metadata(file_path, yaml_path) #Pull data
 ```
+# Set location for saving exported plots
+1. In most notebooks you can set the directory of exported plots. Edit lines such as `figure_folder = './figs_2024_promoter_editing_paper/f_diff-min-prom/'`. If you drun into errors, check that that the directory specified exists. If you do not wish to save exported plots, comment out lines with the `savefig()` function, such as `g.figure.savefig(figure_folder + plottitle + '.svg',dpi=300,bbox_inches='tight')`. 
