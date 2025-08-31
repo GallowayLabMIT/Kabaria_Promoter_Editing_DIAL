@@ -1,8 +1,8 @@
 # Kabaria_Promoter_Editing_DIAL
 Data analysis, figure, and modeling code for Kabaria et al "Programmable Promoter Editing for Precise Control of Transgene Expression"
 
-# Reference Data 
-Code in this repository require data from Zenodo (DOI: [10.5281/zenodo.17014280](https://doi.org/10.5281/zenodo.17014280)). 
+# Reference data 
+Code in this repository requires data from Zenodo (DOI: [10.5281/zenodo.17014280](https://doi.org/10.5281/zenodo.17014280)). 
 
 # Python setup for data analysis and figures
 1. Create a virtual environment in the repository directory using python -m venv env
@@ -21,8 +21,8 @@ pandas==1.3.5
 ```
 These notebooks were coded with Python 3.9.1. 
 
-5. Download the raw and analyzed data from Zenodo, specifically the data.zip file. Unzip this file.
-6. Create a file in the root directory of the repo called `datadir.txt` that contains the absolute path to the data directory you just downloaded. This should be a single line.
+5. Download the raw and analyzed data from Zenodo, specifically the `attune_data.zip` file. Unzip this file.
+6. Create a file in the root directory of the repo called `datadir.txt` that contains the absolute path to the data directory `attune_data` you just downloaded. This should be a single line.
 
 # Importing data into ipynb 
 1. Select your `datadir.txt` at the beginning of the notebook. For example the `datadir_srk.txt` is selected in  `datadir = Path(Path('./datadir_srk.txt').read_text())`
