@@ -1,7 +1,7 @@
 # Kabaria_Promoter_Editing_DIAL
 Data analysis, figure, and modeling code for Kabaria et al "Programmable Promoter Editing for Precise Control of Transgene Expression" (2025)
 
-# Python setup
+# Python setuppy
 1. Create a virtual environment in the repository directory using python -m venv env
 2. Activate the virtual environment using source env/bin/activate (MacOS, Linux) or .\env\Scripts\activate (Windows)
 3. Install the current package versions for this project using pip install -r requirements.txt (Note for Figure 6 use requirements_bal.txt) Alternatively, if running into errors manually install packages as needed using the versions in the requirments documents. Most used packages are in `functions.py`
@@ -11,6 +11,10 @@ rushd==0.5.1
 scipy==1.7.3
 seaborn==0.11.2
 statannot==0.2.3
+matplotlib==3.5.2
+openpyxl==3.1.5
+numpy==1.21.6
+pandas==1.3.5
 ```
 These notebooks were also coded with Python 3.9.1. The input `columns` in the function `rd.flow.load_csv_with_metadata` may be removed if returning errors. 
 
