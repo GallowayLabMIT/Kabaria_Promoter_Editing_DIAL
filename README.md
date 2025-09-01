@@ -7,18 +7,8 @@ Code in this repository requires data from Zenodo (DOI: [10.5281/zenodo.17014280
 # Python setup for data analysis and figures
 1. Create a virtual environment in the repository directory using python -m venv env
 2. Activate the virtual environment using source env/bin/activate (MacOS, Linux) or .\env\Scripts\activate (Windows)
-3. Install the current package versions for this project using pip install -r requirements.txt (Note for Figure 6 use requirements_bal.txt, and check the document requirementsold.txt for alternative package versions.) Alternatively, manually install packages as needed using the versions in the requirements documents. Most commonly used packages are in `functions.py`
-4. Verify that the correct versions of these packages are installed. Incorrect versions may cause errors in the code. Common packages to check: 
-``` 
-rushd==0.5.1
-scipy==1.7.3
-seaborn==0.11.2 # or seaborn==0.12.2
-statannot==0.2.3
-matplotlib==3.5.2
-openpyxl==3.1.5
-numpy==1.21.6
-pandas==1.3.5
-```
+3. Install the current package versions for this project using pip install -r requirements.txt (Note if package mismatches - for Figure 6 ZF DIAL use requirements_bal.txt, for Figure 4/S19/S21 use requirements_mee.txt, and check the document requirementsold.txt for alternative package versions.) Alternatively, manually install packages as needed using the versions in the requirements.txt document. Most commonly used packages are in `functions.py`
+
 These notebooks were coded with Python 3.9.1. 
 
 5. Download the raw and analyzed data from Zenodo, specifically the `attune_data.zip` file. Unzip this file.
