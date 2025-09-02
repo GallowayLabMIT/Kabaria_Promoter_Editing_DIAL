@@ -11,7 +11,7 @@ Code in this repository requires data from Zenodo (DOI: [10.5281/zenodo.17014280
 
 These notebooks were coded with Python 3.9.1. 
 
-5. Download the raw and analyzed data from Zenodo, specifically the `attune_data.zip` file. Unzip this file.
+5. Download the raw and analyzed data from Zenodo Specifically, download the specified zip files and extract them into a new folder `attune_data`.
 6. Create a file in the root directory of the repo called `datadir.txt` that contains the absolute path to the data directory `attune_data` you just downloaded. This should be a single line.
 
 # Importing data into ipynb 
