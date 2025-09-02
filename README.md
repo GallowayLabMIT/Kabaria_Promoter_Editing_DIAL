@@ -2,7 +2,7 @@
 Data analysis, figure, and modeling code for Kabaria et al "Programmable Promoter Editing for Precise Control of Transgene Expression"
 
 # Reference data 
-Code in this repository requires data from Zenodo (DOI: [10.5281/zenodo.17014280](https://doi.org/10.5281/zenodo.17014280)). 
+Code in this repository requires data available as listed in the main manuscript. 
 
 # Python setup for data analysis and figures
 1. Create a virtual environment in the repository directory using python -m venv env
